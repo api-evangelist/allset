@@ -1,7 +1,27 @@
 aid: allset
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/allset.png
 name: Allset
-description: Allset is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Allset is a food pickup and rewards platform (now part of SoundHound AI) that
+  lets consumers order ahead from local restaurants and coffee shops for
+  grab-and-go, curbside, or dine-in service while earning up to 15% cash back.
+  Positioned as an alternative to third-party delivery marketplaces, Allset
+  connects diners directly with participating restaurants across 100+ U.S.
+  cities, and also runs Allset for Teams for corporate meal ordering. It is a
+  consumer mobile application (iOS and Android) with a restaurant partner
+  program; it does not publish a public developer API, OpenAPI specification, or
+  developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/allset/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +34,33 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Food and Beverage
+- Restaurants
+- Food Ordering
+- Rewards
+- Dine-In
+- Mobile Apps
 apis: []
+common:
+- type: DomainSecurity
+  url: security/allset-domain-security.yml
+- type: Website
+  url: https://www.allsetnow.com
+- type: Blog
+  url: https://blog.allsetnow.com
+- type: HelpCenter
+  url: https://www.allsetnow.com/help
+- type: TermsOfService
+  url: https://www.allsetnow.com/terms/for-restaurants
+- type: PrivacyPolicy
+  url: https://www.allsetnow.com/privacy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
